@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservations.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="iconlogo.png" alt="Burger Hut Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservations">
+        <div class="reservation-form">
+            <h2>Make a Reservation</h2>
+            <form action="reservations.php" method="post" autocomplete="off">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+                <input type="date" name="date" id="date" placeholder="Date of Reservation" required>
+                <input type="time" name="time" id="time" placeholder="Time for Reservation" required>
+                <input type="number" name="guests" id="guests" min="1" placeholder="Number of Guests" required>
+                <textarea name="message" id="message" placeholder="Additional Message" rows="4"></textarea>
+                <button type="submit" name="submit" value="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">&copy;Arman 2024 Burger Hut. All rights reserved.</p>
+    </footer>
+</body>
+</html>
