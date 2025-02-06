@@ -61,7 +61,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservations</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footer.css">
@@ -73,7 +73,12 @@
             <img src="iconlogo.png" alt="Burger Hut Logo">
         </div>
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="menu.html">Menu</a></li>
@@ -129,6 +134,7 @@
         <p class="footer-text">&copy;Arman 2024 Burger Hut. All rights reserved.</p>
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>
 
