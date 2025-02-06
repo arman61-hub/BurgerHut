@@ -1,42 +1,92 @@
-/* menu*/
+/* Menu Section */
 .menu {
-  padding: 25px 0;
+  min-height: 80vh;
+  padding: 50px 5%;
   text-align: center;
   background-color: #070e16;
 }
 
+/* Section Title */
 .menu h2 {
-  font-size: 36px;
+  font-size: 42px;
   margin-bottom: 40px;
   color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
+/* Menu Items Grid */
 .menu-items {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
   justify-content: center;
 }
 
+/* Individual Menu Item */
 .menu-item {
-  max-width: 300px;
-  margin: 0 20px;
-  text-align: left;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+} 
+
+/* Menu Item Image */
 .menu-item img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
+/* Item Name */
 .menu-item h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #ffcc00;
+  font-weight: bold;
 }
-  
+
+/* Item Description */
 .menu-item p {
   font-size: 16px;
-  margin-bottom: 20px;
   color: #ffffff;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .menu h2 {
+    font-size: 36px;
+  }
+
+  .menu-items {
+    grid-template-columns: repeat(auto-fit, minmax(150, 1fr)); 
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    padding: 40px 5%;
+  }
+
+  .menu h2 {
+    font-size: 32px;
+  }
+
+  .menu-item h3 {
+    font-size: 22px;
+  }
+
+  .menu-item p {
+    font-size: 14px;
+  }
 }
