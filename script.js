@@ -1,10 +1,14 @@
-var btn = document.getElementById("btn");
-function change(){
-    btn.style = "background : #e60000;"
-    btn.innerText = "Check out";
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    const hamburger = document.querySelector('.hamburger');
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
 }
 
-function retrieve(){
-    btn.style = "background : #ff0000;";
-    btn.innerText = "Explore Our Menu";
+function change() {
+    document.getElementById('btn').style.backgroundColor = '#cc0000';
+}
+
+function retrieve() {
+    document.getElementById('btn').style.backgroundColor = '#ff0000';
 }
