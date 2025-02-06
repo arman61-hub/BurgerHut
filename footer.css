@@ -1,4 +1,4 @@
-/* Footer*/
+/* Footer */
 .footer {
   background-color: #070e16;
   padding: 20px 0;
@@ -7,9 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 7vh; 
 }
 
 .footer-text {
   font-size: 14px;
 }
-  
