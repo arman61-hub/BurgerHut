@@ -14,7 +14,12 @@
             <img src="iconlogo.png" alt="Burger Hut Logo">
         </div>
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="menu.html">Menu</a></li>
@@ -28,22 +33,29 @@
 
     <section class="testimonials">
         <h2>What Our Customers Say</h2>
-        <div class="testimonial">
-            <img src="customer1.jpg" alt="Customer 1">
-            <p>"The burgers at Burger Hut are simply amazing! The flavors are rich, and the ingredients are always
-                fresh. It's my go-to place whenever I'm craving a delicious meal."</p>
-            <h4>John Doe</h4>
-        </div>
-        <div class="testimonial">
-            <img src="customer2.jpg" alt="Customer 2">
-            <p>"Burger Hut never disappoints! The quality of their burgers and the friendly service make it a top-notch
-                dining experience. I highly recommend it to all burger lovers!"</p>
-            <h4>Jane Smith</h4>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="customer1.jpg" alt="Customer 1">
+                <div class="testimonial-text">
+                    <p>"The burgers at Burger Hut are simply amazing! The flavors are rich, and the ingredients are always fresh. It's my go-to place whenever I'm craving a delicious meal."</p>
+                    <h4>John Doe</h4>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="customer2.jpg" alt="Customer 2">
+                <div class="testimonial-text">
+                    <p>"Burger Hut never disappoints! The quality of their burgers and the friendly service make it a top-notch dining experience. I highly recommend it to all burger lovers!"</p>
+                    <h4>Jane Smith</h4>
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <footer class="footer">
         <p class="footer-text">&copy;Arman 2024 Burger Hut. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
