@@ -1,20 +1,19 @@
-/*hero*/
+/* Hero */
 .hero {
-  background-image: url("hero-background1.jpg");
+  background-image: url("hero-background.jpg");
   background-size: cover;
   background-position: center;
-  height: 80.85vh;
+  height: 80vh; 
   display: flex;
-  text-align: left;
+  align-items: center;
+  justify-content: flex-start;
   color: #fff;
 }
 
 .hero-content {
   max-width: 600px;
   padding: 20px;
-  margin-top :210px;
   margin-left: 4%;
-  
 }
 
 .hero-content h1 {
@@ -36,4 +35,23 @@
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cc0000;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+      text-align: center;
+      margin-left: 0;
+  }
+
+  .hero-content h1 {
+      font-size: 36px;
+  }
+
+  .hero-content p {
+      font-size: 18px;
+  }
 }
