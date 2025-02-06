@@ -14,7 +14,12 @@
             <img src="iconlogo.png" alt="Burger Hut Logo">
         </div>
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="menu.html">Menu</a></li>
@@ -32,20 +37,17 @@
             <div class="menu-item">
                 <img src="burger1.jpg" alt="Burger 1">
                 <h3>Classic Cheeseburger</h3>
-                <p>A juicy beef patty topped with melted cheese, fresh lettuce, tomato, and our special sauce. Served
-                    with a side of crispy fries.</p>
+                <p>A juicy beef patty topped with melted cheese, fresh lettuce, tomato, and our special sauce. Served with a side of crispy fries.</p>
             </div>
             <div class="menu-item">
                 <img src="burger2.jpg" alt="Burger 2">
                 <h3>Veggie Delight</h3>
-                <p>A delicious veggie patty made from a blend of fresh vegetables and spices. Topped with avocado,
-                    sprouts, and tangy mayo. Served with a side of sweet potato fries.</p>
+                <p>A delicious veggie patty made from a blend of fresh vegetables and spices. Topped with avocado, sprouts, and tangy mayo. Served with a side of sweet potato fries.</p>
             </div>
             <div class="menu-item">
                 <img src="burger3.jpg" alt="Burger 3">
                 <h3>Spicy BBQ Burger</h3>
-                <p>A fiery burger packed with flavor! Grilled chicken breast smothered in spicy BBQ sauce, topped with
-                    jalapenos, crispy onion rings, and chipotle mayo. Served with a side of coleslaw.</p>
+                <p>A fiery burger packed with flavor! Grilled chicken breast smothered in spicy BBQ sauce, topped with jalapenos, crispy onion rings, and chipotle mayo. Served with a side of coleslaw.</p>
             </div>
         </div>
     </section>
@@ -53,5 +55,7 @@
     <footer class="footer">
         <p class="footer-text">&copy;Arman 2024 Burger Hut. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
