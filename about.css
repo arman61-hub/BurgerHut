@@ -1,54 +1,158 @@
-/*about*/
+/* About Section */
 .about {
   display: flex;
   align-items: center;
-  padding: 20px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  padding: 40px 5%;
+  gap: 40px; 
+  text-align: left;
 }
 
+/* Content Styling */
 .about-content {
   flex: 1;
   max-width: 600px;
-  padding-right: 50px;
   color: #fff;
-  margin-left: 5%;
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .about h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .about p {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  opacity: 0.9;
 }
 
+
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff0000, #ff4500);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #e60000, #ff1a1a);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7);
+}
+
+/* Image Styling */
 .about-image {
-  max-width: 50%;
-  margin-right: 5%;
+  flex: 1;
+  max-width: 500px;
+  animation: slideIn 1s ease-in-out;
 }
 
 .about-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
 }
 
+.about-image img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+}
+
+/* Dark Theme */
 .dark-theme {
   background-color: #070e16;
 }
 
-.btn {
-  display: inline-block;
-  background-color: #ff0000;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    height: auto; 
+  }
+
+  .about-content {
+    max-width: 85%;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 80%;
+  } 
 }
 
-.btn:hover {
-  background-color: #e60000;
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    height: auto; 
+  }
+
+  .about-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 80%;
+  } 
+
+  .about h2 {
+    font-size: 36px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .about-image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 5%;
+  }
+
+  .about-content h2 {
+    font-size: 32px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
 }
