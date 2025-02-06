@@ -1,38 +1,112 @@
-/* Testimonials Section*/
+/* Testimonials Section */
 .testimonials {
-  padding: 10px 0;
+  min-height: 80vh; 
+  padding: 50px 10%;
   text-align: center;
   background-color: #070e16;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+/* Section Title */
 .testimonials h2 {
-  font-size: 36px;
+  font-size: 42px;
   margin-bottom: 40px;
-  color: #fff;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
+/* Testimonials Grid */
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Testimonial Item */
 .testimonial {
-  max-width: 600px;
-  margin: 0 auto 40px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+}
+
+/* Customer Image */
 .testimonial img {
-  display: block;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin: 0 auto 20px;
+  margin-right: 20px;
+  border: 3px solid #ffcc00;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  flex: 1;
 }
 
 .testimonial p {
   font-size: 18px;
-  margin-bottom: 20px;
-  color: #fff;
+  margin-bottom: 10px;
+  color: #ffffff;
+  opacity: 0.9;
+  line-height: 1.6;
 }
 
+/* Customer Name Below Comment */
 .testimonial h4 {
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: #ffcc00;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials {
+    height: auto;
+    padding: 40px 5%;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial img {
+    margin: 0 auto 15px;
+  }
+
+  .testimonial h4 {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials h2 {
+    font-size: 32px;
+  }
+
+  .testimonial p {
+    font-size: 16px;
+  }
+
+  .testimonial h4 {
+    font-size: 18px;
+  }
+
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+  }
 }
